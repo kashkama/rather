@@ -1,0 +1,7 @@
+<%= render "layouts/errors", :object => @first %>
+
+<%= form_for @first, remote: true do |f| %>
+  <%= f.label :question %>
+  <%= f.text_area :question1, size: "24x6"%><br/>
+  <%= f.submit %>
+<% end %>

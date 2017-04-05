@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<h1 class="text-center heading">Would you rather</h1>
+
+<div class="container-fluid">
+    <ul>
+    <% @firsts.each() do |first|%>
+      <li><%= link_to first.question1, first_path(first) %></li>
+    <% end %>
+  </ul>
+</div>
+
+<p class="text-center"><%= link_to 'New First', new_first_path, id: "new_link", remote: true, class:"btn btn-danger" %></p>

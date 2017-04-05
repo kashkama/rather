@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<h1 class="text-center heading">Would you rather</h1>
+
+<div class="container-fluid">
+    <ul>
+    <% @lasts.each() do |last|%>
+      <li><%= link_to last.question2, last_path(last) %></li>
+    <% end %>
+  </ul>
+</div>
+
+<p class="text-center"><%= link_to 'New Last', new_last_path, remote: true, id: "new_link", class:"btn btn-danger" %></p>

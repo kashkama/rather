@@ -1,0 +1,7 @@
+<%= render "layouts/errors", :object => @last %>
+
+<%= form_for @last, remote: true do |f| %>
+  <%= f.label :question %>
+  <%= f.text_area :question2, size: "24x6"%><br/>
+  <%= f.submit %>
+<% end %>

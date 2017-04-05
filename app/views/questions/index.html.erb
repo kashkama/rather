@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+  <h1 class="text-center heading">Would you rather</h1>
+
+  <div class="container-fluid">
+    <ul class="listdecorations">
+      <% @firsts.each() do |first|%>
+        <li><%= first.question1%></li>
+      <%end%>
+    </ul>
+
+    <ul class="listdecorations">
+      <% @lasts.each() do |last|%>
+        <li>or <%= last.question2%></li>
+      <%end%>
+    </ul>
+
+  </div>

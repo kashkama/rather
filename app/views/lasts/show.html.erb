@@ -1,0 +1,5 @@
+<!DOCTYPE html>
+
+<%= link_to 'Edit', edit_last_path(@last) %> |
+<%= link_to 'Back', lasts_path %> |
+<%= link_to "Delete", last_path(@last), :data => {:confirm => "Are you sure", :method => "delete"}%>
